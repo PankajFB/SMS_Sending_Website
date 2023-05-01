@@ -57,7 +57,7 @@ app.post("/newBlog", (req, res) => {
 app.post("/sendsms", (req, res) => {
   const { number, messege } = req.body;
   console.log(number, messege);
-  alert("message sent");
+ 
   const from = "Vonage APIs"
   const to = number;
   const text = messege;
